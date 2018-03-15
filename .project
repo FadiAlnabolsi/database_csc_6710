@@ -3,11 +3,15 @@
 	<name>CSC6710Demo</name>
 	<comment></comment>
 	<projects>
-		<project>servlet-api</project>
 		<project>jstl-1.2</project>
 		<project>mysql-connector-java-5.1.25-bin</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
