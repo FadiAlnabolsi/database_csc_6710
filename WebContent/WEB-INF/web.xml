@@ -23,6 +23,16 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>UserServletInitialize</display-name>
+    <servlet-name>UserServletInitialize</servlet-name>
+    <servlet-class>user.web.servlet.UserServletInitialize</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletInitialize</servlet-name>
+    <url-pattern>/UserServletInitialize</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     <servlet-class>user.web.servlet.findAll</servlet-class>
@@ -31,17 +41,40 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description></description>
-    <display-name>initdb</display-name>
-    <servlet-name>initdb</servlet-name>
-    <servlet-class>user.web.servlet.initdb</servlet-class>
+    <display-name>findAll3</display-name>
+    <servlet-name>findAll3</servlet-name>
+    <servlet-class>user.web.servlet.findAll3</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>initdb</servlet-name>
-    <url-pattern>/initdb</url-pattern>
+    <servlet-name>findAll3</servlet-name>
+    <url-pattern>/findAll3</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddFollowing</display-name>
+    <servlet-name>AddFollowing</servlet-name>
+    <servlet-class>user.web.servlet.AddFollowing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddFollowing</servlet-name>
+    <url-pattern>/AddFollowing</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>SearchFollow</display-name>
+    <servlet-name>SearchFollow</servlet-name>
+    <servlet-class>user.web.servlet.SearchFollow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchFollow</servlet-name>
+    <url-pattern>/SearchFollow</url-pattern>
+  </servlet-mapping>
+  
+  
+  
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

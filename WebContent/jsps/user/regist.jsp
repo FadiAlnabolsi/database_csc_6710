@@ -39,12 +39,13 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	first name	：<input type="text" name="First name" value="${form.first_name }"/>
-	<span style="color: red; font-weight: 900">${errors.first_name }</span>
+	First Name：<input type="text" name="FirstName" value="${form.FirstName }"/>
+	<span style="color: red; font-weight: 900">${errors.FirstName }</span>
 	<br/>
-	last name	：<input type="text" name="Last name" value="${form.last_name }"/>
-	<span style="color: red; font-weight: 900">${errors.last_name }</span>
-	<br/>
+	Last Name：<input type="text" name="LastName" value="${form.LastName }"/>
+	<span style="color: red; font-weight: 900">${errors.LastName }</span>
+	<br/>	
+	
 	<input type="submit" value="Register"/>
 </form>
   </body>

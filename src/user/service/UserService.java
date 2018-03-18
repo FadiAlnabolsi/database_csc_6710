@@ -1,5 +1,9 @@
 package user.service;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 import user.dao.UserDao;
@@ -53,4 +57,39 @@ public class UserService {
 		return userDao.findall();
 		
 	}
+	
+	public List<Object> findOthers(String username) throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.findOthers(username);
+		
+	}
+	
+	public void Instantiate() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Connection connect = DriverManager
+			      // .getConnection("jdbc:mysql://141.217.48.128:3306/dataview?"
+				//              + "user=shiyong&password=view1234");
+			    		   	.getConnection("jdbc:mysql://localhost/sampledb?"
+				              + "user=john&password=pass1234");
+			
+			String sql = "Call Instantiate();";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			
+			 preparestatement.executeQuery();
+			 
+
+			 
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
 }

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+   <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
@@ -22,6 +22,10 @@
   </head>
   
   <body>
-    <h1>Welcome to the demo</h1>
+    <h1>Welcome to the Demo</h1>
+    <br>
+    <a href="<c:url value='/findAll3'/>" target="body">Please list all the users other than me in the table</a>&nbsp;&nbsp;
+ 
+    
   </body>
 </html>

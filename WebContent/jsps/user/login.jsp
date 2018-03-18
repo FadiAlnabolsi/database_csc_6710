@@ -32,9 +32,9 @@
 	<input type="submit" value="Login"/>
 </form>
 
-<form action="<c:url value='/initdb'/>" method="post">
-	<input type="submit" value="initdb"/>
-</form>
+<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Not Registered Yet</a>	;
+
+
 
   </body>
 </html>

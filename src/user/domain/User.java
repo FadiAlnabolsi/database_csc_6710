@@ -14,8 +14,11 @@ public class User {
 	private String username;
 	private String password; 
 	private String email;
-	private String first_name;
-	private String last_name;
+	private String FirstName;
+	private String LastName; 
+	private String Hobbies;
+	
+
 	
 	public String getUsername() {
 		return username;
@@ -41,25 +44,36 @@ public class User {
 		this.email = email;
 	}
 	
-	public void setFirstName(String first_name) {
-		this.first_name = first_name;
-	}
-	
 	public String getFirstName() {
-		return first_name;
+		return FirstName;
 	}
-	
-	public void setLastName(String last_name) {
-		this.last_name = last_name;
+
+	public void setFirstName(String FirstName) {
+		this.FirstName = FirstName;
 	}
 
 	public String getLastName() {
-		return last_name;
+		return LastName;
 	}
+
+	public void setLastName(String LastName) {
+		this.LastName = LastName;
+	}
+	
+	public String getHobbies() {
+		return Hobbies;
+	}
+
+	public void setHobbies(String Hobbies) {
+		this.Hobbies = Hobbies;
+	}
+
 	
 	@Override
 	public String toString() {
 		return "User [ username=" + username + ", password="
-				+ password + ", email=" + email +"]";
+				+ password + ", email=" + email + 
+				", FirstName=" + FirstName + ", LastName="
+				+ LastName + ", Hobbies=" + Hobbies + "]";
 	}
 }

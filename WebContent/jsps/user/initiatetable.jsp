@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>main</title>
+    <title>Initialize</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -17,41 +17,18 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-	<style type="text/css">
-		*{
-			font-size:10pt;
-		}
-		body{
-			text-align:center;
-		}
-		.table{
-			width:1024px;
-			height:100%;
-			border:1px solid gray;
-		    border-collapse: collapse;
-		}
-		.table td{
-			border:1px solid gray;
-		}
-		iframe {
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+
   </head>
   
   <body>
-<table class="table" align="center">
-	<tr style="background: #4682B4; height: 120px; ">
-		<td colspan="2" align="center">
-			<iframe frameborder="0" src="<c:url value='/jsps/top.jsp'/>" name="top"></iframe>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<iframe frameborder="0" src="<c:url value='/jsps/body.jsp'/>" name="body"></iframe>
-		</td>
-	</tr>
-</table>
+  <h1>Initialize</h1>
+
+
+<p style="color: red; font-weight: 900"> ${msg}</p>
+<form action="<c:url value='/UserServletInitialize'/>" method="post">
+	<input type="hidden" name="method" value="Initialize"/>
+		
+	<input type="submit" value="Initialize"/>
+</form>
   </body>
 </html>

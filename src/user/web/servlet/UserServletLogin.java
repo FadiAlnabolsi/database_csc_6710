@@ -25,7 +25,7 @@ import user.service.UserService;
 
 public class UserServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -61,12 +61,12 @@ public class UserServletLogin extends HttpServlet {
 			e1.printStackTrace();
 		}
 
-		UserService userservice = new UserService();
+		UserService userservice = new UserService();		
 		if(user.getUsername()!=null){
 			try {
 				userservice.login(user);
 				request.getSession().setAttribute("session_user", user);
-
+				
 				request.getRequestDispatcher("/jsps/main.jsp").forward(request, response);
 			} catch (ClassNotFoundException | UserException e) {
 				// TODO Auto-generated catch block
@@ -77,15 +77,15 @@ public class UserServletLogin extends HttpServlet {
 			} catch (IllegalAccessException e) {
 				// TODO Auto-generated catch block
 				request.setAttribute("msg", e.getMessage());
-			}
+			} 
 		}
 		else{
 			request.setAttribute("msg", "You need to register first");
 			request.getRequestDispatcher("/jsps/user/login.jsp").forward(request, response);
 		}
-
-
-
+		
+		
+		
 	}
 
 }
