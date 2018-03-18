@@ -41,7 +41,10 @@
   </head>
   
   <body>
-  
+  <div>
+  			<a href = "/user/initiatetable.jsp">initiate_table</a>
+ 
+  </div>
 <table class="table" align="center">
 	<tr style="background: #4682B4; height: 120px; ">
 		<td colspan="2" align="center">

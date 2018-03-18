@@ -31,10 +31,5 @@
 	Password：	<input type="password" name="password" /><br/>
 	<input type="submit" value="Login"/>
 </form>
-
-<form action="<c:url value='/initdb'/>" method="post">
-	<input type="submit" value="initdb"/>
-</form>
-
   </body>
 </html>

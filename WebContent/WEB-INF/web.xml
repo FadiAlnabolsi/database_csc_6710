@@ -23,6 +23,16 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>UserServletInitialize</display-name>
+    <servlet-name>UserServletInitialize</servlet-name>
+    <servlet-class>user.web.servlet.UserServletInitialize</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletInitialize</servlet-name>
+    <url-pattern>/UserServletInitialize</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     <servlet-class>user.web.servlet.findAll</servlet-class>
@@ -31,18 +41,6 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
-  
-  <servlet>
-    <description></description>
-    <display-name>initdb</display-name>
-    <servlet-name>initdb</servlet-name>
-    <servlet-class>user.web.servlet.initdb</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>initdb</servlet-name>
-    <url-pattern>/initdb</url-pattern>
-  </servlet-mapping>
-  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

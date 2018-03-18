@@ -5,9 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="">
     
-    <title>body</title>
+    <title>Initialize</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,6 +21,14 @@
   </head>
   
   <body>
-    <h1>Welcome to the demo</h1>
+  <h1>Initialize</h1>
+
+
+<p style="color: red; font-weight: 900"> ${msg}</p>
+<form action="<c:url value='/UserServletInitialize'/>" method="post">
+	<input type="hidden" name="method" value="Initialize"/>
+		
+	<input type="submit" value="Initialize"/>
+</form>
   </body>
 </html>

@@ -31,12 +31,16 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">CSC6710</h1>
+<h1 style="text-align: center;">CSC6710 Project1</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a>		
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a>	|&nbsp;
+			<a href="<c:url value='/jsps/user/initiatetable.jsp'/>" target="_parent">Initialize</a>	|&nbsp;
+			
+			
+				
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
